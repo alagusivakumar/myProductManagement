@@ -4,15 +4,8 @@ var should = require("should");
 // This agent refers to PORT where program is runninng.
 
 var server = supertest.agent("http://localhost:8000");
-/*var productDocument = {
-  	 productId         : "_testId1",
-     productName       : "pname",
-     productDescription: "productDescription"
-  }
-// UNIT test begin
-const querystring = require('querystring');
-productDocument   = querystring.stringify(productDocument)
-*/
+
+//UNIT TEST Begins
 
 //insert product test case
 
