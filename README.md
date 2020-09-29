@@ -30,7 +30,7 @@ port: 9092
 
 HOW TO START SERVER?
 
-In order to start the nodejs server , install the dependencies mentioned in the package.json using "npm install" and start the server using "node server.js". The server will run at localhost at port number 8000. Inorder to test the application , use "npm test"
+In order to start the nodejs server , install the dependencies mentioned in the package.json using "npm install" and start the server using "node server.js". The server will run at localhost at port number 8000. Inorder to test the application , use "npm test" command
 
 HOW TO START THE CONSOLE?
 
