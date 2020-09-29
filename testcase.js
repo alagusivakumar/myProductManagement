@@ -18,19 +18,18 @@ productDocument   = querystring.stringify(productDocument)
 
 describe("Insert product test case",function(){
 
-  // #1 should return home page
   var productDocument = {
   	 productId         : "_testId1",
      productName       : "pname",
      productDescription: "productDescription"
   }
-// UNIT test begin
+
 const querystring = require('querystring');
 productDocument   = querystring.stringify(productDocument)
 
   it("should insert the document successfully ",function(done){
 
-    // calling home page api
+    
     server
     .post("/insertProduct")
     .send(productDocument)
@@ -46,7 +45,7 @@ productDocument   = querystring.stringify(productDocument)
   });
   it("should return the bad request status",function(done){
 
-    // calling home page api
+  
     server
     .post("/insertProduct")
     .send(productDocument)
@@ -66,7 +65,7 @@ productDocument   = querystring.stringify(productDocument)
 
 describe("update product price test case",function(){
 
-  // #1 should return home page
+  
   var productDocument = {
   	productId         : "_testId1",
   	productPrice      : 10000
@@ -75,7 +74,6 @@ describe("update product price test case",function(){
   productDocument   = querystring.stringify(productDocument)
   it("should update the document successfully ",function(done){
 
-    // calling home page api
     server
     .put("/updatePrice")
     .send(productDocument)
@@ -100,11 +98,11 @@ describe("get product details test case",  function(){
    
   it("should get the document successfully ",function(done){
 
-    // calling home page api
+   
     server
     .get("/getProduct?productId=_testId1")
     .expect("Content-type",/json/)
-    .expect(200) // THis is HTTP response
+    .expect(200)
     .end(function(err,res){
       // HTTP status should be 200
       res.status.should.equal(200)  
@@ -123,7 +121,7 @@ describe("get product details test case",  function(){
 
 describe("delete product test case",function(){
 
-  // #1 should return home page
+
   var productDocument = {
   	productId         : "_testId1"
   }
@@ -131,7 +129,7 @@ describe("delete product test case",function(){
   productDocument   = querystring.stringify(productDocument)
   it("should update the document successfully ",function(done){
 
-    // calling home page api
+    
     server
     .delete("/deleteProduct")
     .send(productDocument)
