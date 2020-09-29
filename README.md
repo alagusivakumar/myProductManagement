@@ -25,5 +25,5 @@ host: localhost
 
 port: 9092
 
-In order to start the Server , type "node server.js" in your terminal. The server will run at localhost at port number 8000
+In order to start the Server , type "node server.js" in your terminal. The server will run at localhost at port number 8000. Inorder to test the application , use "npm test"
 
