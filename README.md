@@ -9,7 +9,7 @@ Prerequisites
 
 Configuration
 
-MongoDb
+1.MongoDb
 
 
 host: localhost
@@ -19,11 +19,14 @@ port: 27017
 database: product
 
 
-kafka
+2.kafka
 
 host: localhost
 
 port: 9092
 
-In order to start the Server , type "node server.js" in your terminal. The server will run at localhost at port number 8000. Inorder to test the application , use "npm test"
+
+HOW TO RUN?
+
+In order to start the application , install the dependencies mentioned in the package.json using "npm install" and start the server using node server.js. The server will run at localhost at port number 8000. Inorder to test the application , use "npm test"
 
