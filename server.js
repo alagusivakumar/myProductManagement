@@ -2,14 +2,16 @@
 var express    = require('express');        // call express
 var app        = express();                 // define our app using express
 var bodyParser = require('body-parser');
-
-
+var cors       = require('cors')
 //using body parser
 app.use(
   express.urlencoded({
     extended: false
   })
 )
+
+//enabling CORS
+app.use(cors())
 
 //initializating the routers
 insertProduct = require('./insertProduct.js')
